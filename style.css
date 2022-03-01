@@ -1,0 +1,296 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+.smallimg {
+	width: 84px;
+}
+.btnedit {
+	color: #2b57e9;
+	background: white !important;
+
+	
+	border: 0;
+	padding: 10px 23px;
+	border-radius: 22px 22px;
+	margin-left: 82px;
+	position: relative;
+	z-index: 1;
+	
+}
+.btnedit::before{
+	content: "";
+	height: 100%;
+	width: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #156efd;
+	
+	border-radius: 22px 22px;
+	z-index: -1;
+	transition: .9s;
+}
+.btnedit:hover::before{
+	width:100% ;
+	
+}
+.btnedit:hover{
+	color: white;
+}
+
+.header-manu {
+	padding-left: 0;
+}
+.header-manu li{
+	display: inline-block;
+	padding: 10px 10px;
+	position: relative;
+
+}
+.header-manu li a {
+	text-decoration: none;
+
+	color: #858484;
+	font-weight: 600;
+	padding: 0px 15px;
+	position: relative;
+	display: inline-block;
+}
+.header-manu li a::before{
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	height: 2px;
+	width: 0;
+	background: #156efd;
+    transition: .5s;
+}
+.header-manu li:hover a::before{
+   
+    width: 85px;
+
+}
+
+.slider-section{
+	background: #ecf6ff;
+	padding: 180px;
+	position: relative;
+	overflow: hidden;
+}
+.slider-content h2 {
+	font-size: 40px;
+	font-weight: 600;
+}
+.slider-content p {
+	margin: 47px 0;
+}
+.sliderbtn {
+
+}
+
+.slider-image::after {
+	content: "";
+	position: absolute;
+	bottom: -63px;
+	right: -130px;
+	height: 900px;
+	width: 900px;
+	background-image: url(https://i.ibb.co/zH8401r/hero-image.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+.sliderbtn {
+	padding: 11px 12px;
+	border-radius: 25px 25px;
+	font-size: 17px;
+}
+/* service section */
+.service-item{
+	background: white;
+	
+
+}
+.service-items {
+	margin-top: 42px;
+}
+.cardedit{
+	background: #f9fcff;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.26);
+	transition: .5s;
+}
+.cardedit:hover{
+	background: #3b4bf4;
+	color: white;
+}
+.service-content{}
+.service-content h5 {
+	color: #a092ec;
+	margin-bottom: 22px;
+}
+.service-content h2 {
+	font-size: 38px;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.service-content h2 span{
+	position: relative;
+
+}
+.service-content h2 span::after {
+	content: "";
+	position: absolute;
+	bottom: -13px;
+	left: 8px;
+	height: 3px; 
+	width: 47px;
+	background: #a092ec;
+	transition: .9s;
+}
+.cardedit:hover span::after{
+	width: 55px;
+	background: white;
+}
+.service-content p {
+	color: #767676;
+}
+.card-body{
+
+}
+.card-body h5 {
+	font-weight: 600;
+}
+.card-body p {
+	padding: 13px 0;
+}
+.card-body span i {
+	height: 50px;
+	width: 50px;
+	background: #5353f0;
+	color: white;
+	line-height: 50px;
+	text-align: center;
+	font-size: 22px;
+	border-radius: 26px 26px 26px 0;
+	margin-bottom: 37px;
+	transition: .5s;
+}
+.cardedit:hover .card-body span i{
+	background: white;
+	color:#5353f0 ;
+}
+.card-body span{
+	position: relative;
+
+}
+.card-body span::after {
+	content: "";
+	position: absolute;
+	bottom: -22px;
+	left: -1px;
+	height: 3px;
+	width: 30px;
+	background: #5353f0;
+}
+.card-text:last-child {
+	margin-bottom: 15px;
+}
+.grow{
+	background: #49536d;
+	padding: 100px;
+}
+
+.grow-content h4 {
+	color: white;
+	margin-bottom: 18px;
+}
+.grow-content h3 {
+	color: white;
+	font-size: 35px;
+	position: relative;
+}
+.grow-content h3::before {
+	content: "";
+	position: absolute;
+	top: 52px;
+	left: 219px;
+	height: 3px;
+	width: 100px;
+	background: white;
+}
+.grow-content p{
+	color: white;
+	margin-top: 43px;
+}
+.grow-animation {
+	margin-top: 45px;
+}
+
+.grow-animation span{
+	position: relative;
+
+}
+
+.grow-animation span i {
+	height: 90px;
+	width: 90px;
+	line-height: 90px;
+	font-size: 24px;
+	color: #3a63ea;
+	background: white;
+	border-radius: 50%;
+	
+	
+}
+.grow-animation span::before {
+	content: "";
+	position: absolute;
+	top: -45px;
+	left: -4px;
+	height: 99px;
+	width: 99px;
+	border: 1px solid white;
+	border-radius: 50%;
+	animation-name: sajjad;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.grow-animation span::after {
+	content: "";
+	position: absolute;
+	top: -50px;
+	left: -10px;
+	height: 110px;
+	width: 110px;
+	border: 1px solid white;
+	border-radius: 50%;
+	animation-name: sajjad;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes sajjad{
+	0%{ transform: scale(1);
+		opacity: 1;
+
+	}
+	25%{
+		transform: scale(1.5);
+		opacity: .7;
+	}
+	50%{
+		transform: scale(1.7);
+		opacity: .9;
+	}
+	100%{
+		transform: scale(2);
+		opacity: 0;
+	}
+
+}
